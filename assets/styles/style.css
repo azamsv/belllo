@@ -1,0 +1,505 @@
+@import "fonts.css";
+/*BASIC CONF*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+/*BASIC CONF*/
+/*UNIQUE CONF*/
+.grid {
+  display: grid;
+}
+.grid_col-6 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid_col-4 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_col-3 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+.align-left {
+  align-items: flex-start;
+}
+
+.btn_price {
+  background: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #1D253C;
+  border: 1px solid rgba(29, 37, 60, 0.2);
+  border-radius: 4px;
+  width: 161px;
+  height: 44px;
+  cursor: pointer;
+}
+.btn_orange {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #F46752;
+  border: 1px solid rgba(29, 37, 60, 0.2);
+  border-radius: 4px;
+  width: 220px;
+  height: 61px;
+  cursor: pointer;
+}
+.btn_hollow {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #126F86;
+  height: 22px;
+}
+
+.section_suptitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #F46752;
+}
+.section_title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 52px;
+  color: #1D253C;
+}
+.section_desc {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #5A6482;
+}
+
+/*UNIQUE CONF*/
+/*HEADER SECTION*/
+.header {
+  height: 105px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.header .container {
+  max-width: 1340px;
+}
+.header_link {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1D253C;
+  margin-left: 35px;
+  transition: 0.15s;
+}
+.header_link:before {
+  content: "";
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  background: #007188;
+  height: 1px;
+  width: 0;
+  transition: 0.3s;
+}
+.header_link:hover {
+  color: #007188;
+}
+.header_link:hover:before {
+  width: 100%;
+}
+.header_log-in {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1D253C;
+  margin-right: 39px;
+}
+
+/*HEADER SECTION*/
+/*HERO SECTION*/
+.hero {
+  height: 100vh;
+  background: url("../images/hero1.png") no-repeat right;
+  background-position-y: 17px;
+}
+.hero .container {
+  max-width: 1270px;
+}
+.hero_content {
+  padding-top: 27px;
+}
+.hero_suptitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+.hero_title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 68px;
+  max-width: 463px;
+  text-transform: capitalize;
+}
+.hero_desc {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  max-width: 411px;
+  margin: 26px 0 40px;
+}
+
+/*HERO SECTION*/
+/*FUTURE SECTION*/
+.future {
+  background: #F9F5F2;
+  padding: 85px;
+}
+.future_img {
+  width: 500px;
+  height: 436px;
+}
+.future_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.future_sm_desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5A6482;
+  margin-top: 20px;
+}
+.future_sm_desc:before {
+  content: "*";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F46752;
+}
+.future_right-part {
+  padding-left: 94px;
+}
+.future_title {
+  margin-top: 26px;
+}
+.future_desc {
+  margin: 19px 0 32px;
+}
+
+/*FUTURE SECTION*/
+/*TEHNOLOGY SECTION*/
+.tehnology {
+  padding: 148px 0 164px;
+}
+.tehnology_title {
+  margin: 27px 0 35px;
+}
+.tehnology_desc {
+  max-width: 483px;
+  margin-bottom: 15px;
+}
+.tehnology_img {
+  position: relative;
+  width: 542px;
+  height: 510px;
+}
+.tehnology_img img {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tehnology_dots {
+  position: absolute;
+  top: -35px;
+  left: -45px;
+}
+.tehnology_comment {
+  position: absolute;
+  display: flex;
+  width: 326px;
+  height: 67px;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #1D253C;
+  bottom: -25px;
+  left: -60px;
+  z-index: 11;
+}
+
+/*TEHNOLOGY SECTION*/
+/*INSURANCE SECTION*/
+.insurance {
+  position: relative;
+  padding: 91px 0 85px;
+  background: #F8F8F8;
+}
+.insurance_title {
+  margin: 30px 0 37px;
+}
+.insurance_desc {
+  text-align: center;
+  padding: 0 12px;
+  margin-bottom: 41px;
+}
+.insurance .grid {
+  width: 100%;
+  grid-column-gap: 70px;
+}
+.insurance_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 310px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.04);
+  border-radius: 0;
+}
+.insurance_card.card_first {
+  padding-top: 70px;
+}
+.insurance_card.card_second {
+  padding-top: 30px;
+}
+.insurance_card.card_third {
+  padding-top: 44px;
+}
+.insurance_card.card_first .insurance_sm-title {
+  margin: 15px 0 5px;
+}
+.insurance_card.card_first .insurance_sm-desc {
+  width: 212px;
+}
+.insurance_card.card_first .insurance_sm-desc a {
+  text-decoration: underline;
+  color: #1D253C;
+}
+.insurance_card.card_second .insurance_sm-desc {
+  width: 258px;
+  text-align: center;
+  margin-top: 15px;
+}
+.insurance_card.card_third .insurance_sm-title {
+  margin: -2px 0 10px;
+}
+.insurance_card.card_third .insurance_sm-desc {
+  font-size: 16px;
+  text-align: center;
+  color: #5A6482;
+  width: 244px;
+}
+.insurance_sm-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  color: #1D253C;
+}
+.insurance_sm-desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #5A6482;
+}
+.insurance_umb {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -110px;
+  bottom: 0;
+  margin: 0 auto;
+}
+.insurance_dog {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+
+/*INSURANCE SECTION*/
+/*STEPS SECTION*/
+.steps {
+  background: #363839;
+  padding: 120px 0 101px;
+}
+.steps_suptitle {
+  font-weight: 500;
+  text-align: center;
+}
+.steps_title {
+  margin: 26px 0 15px;
+  font-size: 44px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.steps_desc {
+  margin: 0 auto;
+  text-align: center;
+  color: #ACB4BF;
+  max-width: 731px;
+}
+.steps_content {
+  height: 195px;
+  margin-top: 63px;
+  position: relative;
+}
+.steps_content .steps_left-part {
+  position: absolute;
+  bottom: -3.62px;
+  left: 63px;
+  width: 234px;
+}
+.steps_content .steps_center-part {
+  position: absolute;
+  width: 234px;
+  left: 0;
+  right: 0;
+  bottom: 16.38px;
+  margin: 0 auto;
+}
+.steps_content .steps_center-part .steps_sm-title {
+  margin-bottom: 14px;
+}
+.steps_content .steps_right-part {
+  position: absolute;
+  width: 256px;
+  right: 56px;
+  bottom: 22.38px;
+}
+.steps_content .steps_left-part .steps_sm-title, .steps_content .steps_right-part .steps_sm-title {
+  margin-bottom: 8px;
+}
+.steps_sm-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.steps_sm-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ACB4BF;
+}
+.steps_one {
+  position: absolute;
+  top: 3.62px;
+  left: 167px;
+  z-index: 11;
+}
+.steps_two {
+  position: absolute;
+  top: 9.63px;
+  left: 1px;
+  right: 0;
+  margin: 0 auto;
+  z-index: 11;
+}
+.steps_three {
+  position: absolute;
+  top: -0.38px;
+  right: 162px;
+  z-index: 11;
+}
+.steps_circle1 {
+  position: absolute;
+  top: 23.68px;
+  left: 182px;
+  z-index: 10;
+}
+.steps_circle2 {
+  position: absolute;
+  top: 23.62px;
+  left: -20px;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+}
+.steps_circle3 {
+  position: absolute;
+  top: 9.62px;
+  right: 174px;
+}
+.steps_path {
+  position: absolute;
+  top: 16.62px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.steps_confetti {
+  position: absolute;
+  top: -148px;
+  right: -167px;
+}
+.steps_drop1 {
+  position: absolute;
+  top: -13px;
+  left: 78px;
+}
+.steps_drop2 {
+  position: absolute;
+  top: 0.67px;
+  left: 348px;
+}
+
+/*STEPS SECTION*/
+
+/*# sourceMappingURL=style.css.map */
