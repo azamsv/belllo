@@ -656,6 +656,36 @@ button {
 }
 /*CARDS SECTION*/
 
+/*TODAY SECTION*/
+.today {
+  position: relative;
+  background: #E5F3FE;
+  padding: 107px 0 85px;
+  &_title {
+    font-weight: 600;
+    text-align: center;
+  }
+  &_desc {
+    margin: 8px 0 39px;
+    text-align: center;
+  }
+  &_umb {
+    position: absolute;
+    top: -64px;
+    left: 64px;
+  }
+  &_boy {
+    position: absolute;
+    bottom: 0;
+    right: 252px;
+  }
+}
+/*TODAY SECTION*/
+
+/*FOOTER SECTION*/
+
+/*FOOTER SECTION*/
+
 
 
 
